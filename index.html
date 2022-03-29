@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav flex">
+            <h1>Dojonary</h1>
+            <input class="search" type="text" placeholder="Search">
+            <button onclick="changeText(this)" class="nav-btn">Login</button>
+        </div>
+        <!--this is supposed to say "logout"upon the click-->
+        <div class="submain flexstart">
+            <div class="left-col">
+                <div class="npract-main flex"> 
+                    <div class="npracol1">
+                        <div class="npracol1-contents">
+                            <div class="npracol1-text"> <!--simpler class name: definition-left-->
+                                <h1>ninja</h1>
+                                <h4><em>noun</em></h4>
+                                <p>Plural: <em>ninjas</em></p>
+                            </div>
+                            <button onclick="alert('a ninja was liked')" class="npra-btn">13 Likes</button>
+                        </div>
+                    </div>
+                    <div class="npracol2"> <!--Clearer name for this class: definition-right-->
+                        <p>A practitioner skilled in the <a href="www.Google.com">Japanese</a> art of <a
+                                href="www.Google.com">ninjutsu</a></p>
+                        <!--a 2 to 1 flex could be placed on these two columns with this column being the 2 side-->
+                    </div>
+                </div>
+                <div class="nprog-main flex">
+                    <div class="nprogcol1"> <!--onclick function placement-->
+                        <div class="nprogcol1-text">
+                            <h1>ninja</h1>
+                            <h4><em>noun</em></h4><!--can't have an h tag within an em tag (if you do, changes made in css won't affect the elements within the tag); so I moved the em tag to in between the h4 tag-->
+                            <p>Plural: <em>ninjas</em></p>
+                        </div>
+                        <button onclick="alert('a ninja was liked')" class="nprog-btn">37 Likes</button>
+                    </div>
+                    <div class="nprogcol2">
+                        <p>A <a href="www.Google.com">Programmer</a> who breaks down problems with <a
+                                href="www.Google.com">zen</a>-like focus</p>
+                        <!--a 2 to 1 flex could be placed on these two columns with this column being the 2 side-->
+                    </div>
+                </div>
+            </div>
+            <div class="right-col flex">
+                <div class="trightbox">
+                    <!--the "t" stands for "top"-->
+                    <p>Dojonary is defined by <strong>YOU</strong></p>
+                    <button onclick="hideButton(this)" class="tbbtn">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script> <!--make sure when attaching .js that it's ./ first this is what brings up the sheets sheets available to attach -->
+</body>
+
+</html>
